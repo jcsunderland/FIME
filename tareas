@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int a,b,r;
+	char op;
+	scanf("%d%c%d", &a,&op,&b);
+	switch (op){
+		case '+':
+			r=a+b;
+        break;
+        case '-':
+        	r=a-b;
+        break;
+        case 'x':
+        	r=a*b;
+        break;
+        case '/':
+        	r=a/b;
+        break;
+        default:
+        	printf("Error!");
+	}
+	printf("El resultado es: %d", r);
+getch();
+}
